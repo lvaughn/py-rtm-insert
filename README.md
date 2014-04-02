@@ -6,8 +6,10 @@ tasks to [Remember The Milk](http://rememberthemilk.com).  It's designed to
 be used inside of [Pythonista](http://omz-software.com/pythonista/) on iOS (called by 
 [Drafts](http://agiletortoise.com/drafts/), but that's flexible).
 
-I'm not sure if it's useful to anyone but me, but I wrote it and figured I may 
-not be the only one, so I thought I'd share it.
+I'm not sure if it's useful to anyone but me, but it fits my work
+flow of adding a bunch of tasks at once when planning my day,
+and perhaps it will be useful to other people. I find this easier for
+bulk task capture than RTM's iOS app.
 
 # Required #
 * Pythonista
@@ -17,9 +19,10 @@ not be the only one, so I thought I'd share it.
 
 # Install #
 
-1. Fix the values for API\_KEY and SHARED\_SECRET near the top of `py_rtm_insert.py`
-2. Copy `py_rtm_insert.py` file in to Pythonista, naming it "SendToRTM"
-3. Create a custom URL action in Drafts with the URL (named whatever you want)
+1. Get an [API\_KEY and a SHARED\_SECRET](https://www.rememberthemilk.com/services/api/keys.rtm)
+2. Fix the values for API\_KEY and SHARED\_SECRET near the top of `py_rtm_insert.py`
+3. Copy `py_rtm_insert.py` file in to Pythonista, naming it "SendToRTM"
+4. Create a custom URL action in Drafts with the URL (named whatever you want)
 
         pythonista://SendToRTM?action=run&argv=[[draft]]
 
